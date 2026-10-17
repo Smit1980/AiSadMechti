@@ -7,3 +7,16 @@
 @media print{.intro-deck{display:block!important;padding:15px 0!important;color:#111!important}.intro-deck-heading{display:block}.intro-deck-stamp,.intro-toolbar,.intro-keyboard-hint,.intro-slide-action,.intro-interface-key .intro-small-label{display:none!important}.intro-slide,.intro-slide[hidden]{display:block!important;border:1px solid #aaa;border-radius:0;padding:15px!important;break-inside:avoid;page-break-inside:avoid;min-height:0;margin:15px 0}.intro-slide h3{font-size:21pt!important}.intro-slide-lead,.intro-takeaway{font-size:10pt!important}.intro-slide-tag{font-size:8pt}.intro-deck-heading h2{font-size:24pt}.intro-timing{font-size:9pt}.intro-marked-prompt p{font-size:10pt!important}.intro-chat-mock button{display:block!important}.intro-first-task .button{display:none!important}.intro-slide *{-webkit-print-color-adjust:exact;print-color-adjust:exact}.intro-outcome svg{height:65px}.intro-slide header{margin-bottom:15px}.intro-takeaway{margin-top:15px}.intro-interface-layout{grid-template-columns:2fr 1fr}.intro-chat-mock{display:grid}.intro-interface-key p{font-size:9pt}}
 .intro-route-link{margin:0 0 20px;padding:12px 16px;background:#edf3ff;border:1px solid #c1d1ed;border-radius:9px;font-size:14px}.intro-route-link a{color:#365f9c;font-weight:600}
 @media print{.intro-route-link{display:none}}
+/* Live mobile QA: keep schematic controls legible and comfortably tappable. */
+@media(max-width:700px){
+ .intro-chat-mock button,.intro-chat-mock .mock-toolbar button,.intro-chat-mock .mock-input,.intro-chat-mock .mock-send{font-size:12px!important;min-height:44px!important;line-height:1.45}
+ .intro-chat-mock aside button{padding:8px 6px}
+ .intro-chat-mock aside>span,.mock-history{font-size:11px}
+ .mock-user,.mock-answer>b,.mock-answer span,.mock-input span{font-size:12px}
+ .mock-answer small{font-size:11px}
+ .mock-compose-actions{display:grid;grid-template-columns:1fr;gap:7px;padding:8px}
+ .mock-compose-actions button{width:100%;padding:9px;white-space:normal}
+ .mock-toolbar{padding:9px}
+ .intro-interface-key p{font-size:14px}
+}
+@media(max-width:700px){.intro-training-flow{flex-direction:column;flex-wrap:nowrap}.intro-training-flow>.intro-big-arrow{transform:rotate(90deg);line-height:1}.intro-training-flow svg{width:160px;height:110px}.intro-data-stack{width:150px}.intro-data-stack i{left:28px;width:85px}.intro-data-stack i:nth-child(2){left:33px}.intro-data-stack i:nth-child(3){left:38px}.intro-data-stack b{font-size:12px}}
