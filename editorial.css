@@ -14,3 +14,4 @@ body{font-family:Inter,Arial,sans-serif;background:var(--paper);color:var(--ink)
 /* Final measured contrast pass: neutral captions are never inherited pale colors. */
 .intro-service-layer small,.intro-data-stack b,.intro-chat-mock aside>span,.mock-history,.intro-schematic-caption,.intro-before li,.intro-after li,.intro-keyboard-hint,.workbook-label,.after-question .workbook-label,.resource span{color:#33485c!important}.card-no{color:#142c46!important;background:#eee9df!important}.intro-big-arrow,.intro-answer-flow>span,.intro-service-layer>.intro-big-arrow,.intro-refine-path>span,.intro-safety-path>span,.intro-before-after>span{color:#3e7045!important}
 .workbook-formula>b{color:#3e7045!important}
+.button.light:hover,.community a.button:hover{background:#f5e8b7!important;color:#142c46!important;border-color:#f5e8b7!important}
