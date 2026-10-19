@@ -16,7 +16,7 @@ fields.forEach(k=>{body=body.split('['+k+']').join(values[k]);});
   document.getElementById('template-status').textContent='Заполненный черновик готов. Прочитайте его целиком перед копированием; в сервис ничего не отправлено.';
  }
  form.addEventListener('submit',e=>{e.preventDefault();compose();});
- document.querySelectorAll('[data-fill-template]').forEach(b=>b.addEventListener('click',()=>{select.value=b.dataset.fillTemplate;compose();document.getElementById('template-workbench').scrollIntoView({behavior:'smooth',block:'start'});select.focus({preventScroll:true});}));
+ document.querySelectorAll('[data-fill-template]').forEach(b=>b.addEventListener('click',()=>{select.value=b.dataset.fillTemplate;if(b.dataset.templateAge){document.querySelector('#template-form [name="group_age"]').value=b.dataset.templateAge;}compose();document.getElementById('template-workbench').scrollIntoView({behavior:'smooth',block:'start'});select.focus({preventScroll:true});}));
  document.getElementById('template-clear').addEventListener('click',()=>{form.reset();output.value='';document.getElementById('template-print').textContent='';document.getElementById('template-status').textContent='Поля очищены. Данные нигде не сохранялись.';});
  window.addEventListener('beforeprint',()=>document.getElementById('template-print').textContent=output.value);
 })();

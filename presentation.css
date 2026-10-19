@@ -2,3 +2,5 @@
 #slide-2 .slide-box:nth-of-type(1),#slide-2 .slide-box:nth-of-type(2){align-items:flex-start}.slide-footer{display:none}
 @media print{.export-slide{zoom:1!important}}
 .slide-presenter{position:absolute;left:1160px;top:60px;width:680px;font-size:21px;letter-spacing:2px;color:#536172;text-align:right}
+/* Slide1: longer optional-result labels keep all text within existing cards. */
+#slide-1 .slide-box{font-size:26px!important;line-height:1.2;padding:16px}
