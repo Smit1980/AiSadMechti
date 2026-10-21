@@ -1,6 +1,6 @@
 'use strict';
 (()=>{
- const maxUrl='https://max.ru/join/WWR_dfNXSUyW-a0xuiRjyf4OByF07DYHxrFYOJDwZ8M';
+ const maxUrl='https://max.ru/join/VHiqFPg1MDi8-j9bUD9vIxqlpZGnyhQwlOHWywH0Y10';
  const q=s=>document.querySelector(s),all=s=>[...document.querySelectorAll(s)];
  const params=new URLSearchParams(location.search);
  if(params.get('deck')==='1')document.body.classList.add('neurosad-deck-only');

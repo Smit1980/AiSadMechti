@@ -17,7 +17,7 @@
 
 Возраст в слайдах — учебный пример. В реальном запросе всегда указывайте конкретную группу и реальные условия. Схемы токенов и контекста упрощены; память, файлы и поиск зависят от сервиса. Не вводите персональные данные детей и семей.
 
-QR в assets/neiroskazka/qr-max.png ведёт на https://max.ru/join/WWR_dfNXSUyW-a0xuiRjyf4OByF07DYHxrFYOJDwZ8M. Он кликабелен в финальном блоке страницы.
+QR в assets/neiroskazka/qr-max.png ведёт на https://max.ru/join/VHiqFPg1MDi8-j9bUD9vIxqlpZGnyhQwlOHWywH0Y10. Он кликабелен в финальном блоке страницы.
 
 ## Откат
 
