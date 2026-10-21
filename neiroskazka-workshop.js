@@ -49,5 +49,3 @@
  function windowState(long){const tray=q('#window-tray');tray.replaceChildren();const cards=long?['Новый вопрос','Последние сообщения','Материал для ответа']:['Задача: одна игра','Возраст: 4–5 лет','Условия: крупные кубики'];for(const text of cards){const card=document.createElement('div');card.textContent=text;tray.append(card);}q('#window-title').textContent=long?'В длинной беседе важное может оказаться вне выбранного контекста':'Важные условия рядом с задачей';q('#window-answer').textContent=long?'В этом подготовленном примере ранние условия не вошли в выбранный фрагмент. Ответ стал слишком общим. Повторите возраст, материалы и задачу в новом запросе.':'Возраст, материалы и конкретная задача помогают подготовить подходящий черновик. Это пример, а не ответ работающей модели.';q('#window-add').disabled=long;q('#window-restore').disabled=!long;}
  q('#window-add').addEventListener('click',()=>windowState(true));q('#window-restore').addEventListener('click',()=>windowState(false));windowState(false);
 })();
-
-\n
