@@ -19,3 +19,30 @@ body.neurosad-deck-only .tale-slide h3,.intro-deck:fullscreen .tale-slide h3{fon
 @media print{.hero.tale-hero{min-height:0;display:block}.tale-hero-art{display:none}.tale-slide .neurosad-slide-body{overflow:visible}.tale-choice,.tale-flow-controls,.tale-command button,#copy-max-link{display:none!important}.tale-card{box-shadow:none}.community{background:white!important;color:#102346!important}.community *{color:#102346!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 .tale-requirements{max-width:1520px;margin:auto;padding:40px clamp(20px,4vw,70px);background:#fff}.tale-requirements .section-head{max-width:1000px}.tale-requirements .section-head h2{font-size:clamp(32px,3.2vw,50px)}.tale-requirements .tale-card p{font-size:16px}.tale-requirements .tale-card b{font-size:14px}.tale-requirements details{margin-top:18px;border:1px solid #dce7f2;background:#f4f8fc;border-radius:13px;padding:12px 18px}.tale-requirements summary{color:#102346;font-weight:800;cursor:pointer}.tale-requirements details p{max-width:950px}
+
+/* 16 supplied presentation slides */
+.tale-image-deck{max-width:1520px}
+.tale-image-slides{min-width:0}
+.tale-image-slide{position:relative;box-sizing:border-box;aspect-ratio:16/9;margin:0;overflow:hidden;border:1px solid #d8e5ee;border-radius:20px;background:#edf3f8;box-shadow:0 18px 48px rgba(16,35,70,.12)}
+.tale-image-slide figure{width:100%;height:100%;margin:0;display:grid;place-items:center}
+.tale-image-slide img{display:block;width:100%;height:100%;object-fit:contain}
+.tale-image-slide figcaption{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.tale-image-deck.tale-image-reading .tale-image-slide{margin:0 0 22px}
+.tale-slide-notes{max-width:1520px}
+.tale-slide-notes details{margin:10px 0;padding:14px 18px;border:1px solid #dce7f2;border-radius:14px;background:#f7fbff}
+.tale-slide-notes summary{cursor:pointer;color:var(--tale-navy);font-weight:800}
+.tale-slide-notes details p{max-width:900px;margin:12px 0 2px}
+.tale-image-deck:fullscreen{box-sizing:border-box;width:100vw;max-width:none;height:100vh;padding:14px 22px;background:#eef5fb;overflow:auto}
+.tale-image-deck:fullscreen>p:first-child,.tale-image-deck:fullscreen .intro-deck-heading,.tale-image-deck:fullscreen .intro-timing,.tale-image-deck:fullscreen .intro-keyboard-hint{display:none}
+.tale-image-deck:fullscreen .tale-image-slide{border-radius:12px}
+body.neiroskazka-image-deck-only .topbar,body.neiroskazka-image-deck-only footer,body.neiroskazka-image-deck-only main>:not(#neiroskazka-slides){display:none!important}
+body.neiroskazka-image-deck-only main{display:block;margin:0;padding:0}
+body.neiroskazka-image-deck-only #neiroskazka-slides{box-sizing:border-box;max-width:none;margin:0;padding:12px clamp(12px,2.5vw,30px)}
+body.neiroskazka-image-deck-only #neiroskazka-slides>p:first-child,body.neiroskazka-image-deck-only .intro-deck-heading,body.neiroskazka-image-deck-only .intro-timing,body.neiroskazka-image-deck-only .intro-keyboard-hint{display:none}
+body.neiroskazka-image-deck-only .tale-image-slide{border-radius:12px}
+@media(max-width:760px){.tale-image-deck{padding-left:14px;padding-right:14px}.tale-image-slide{border-radius:12px}.tale-image-deck .intro-toolbar{gap:8px}.tale-image-deck .intro-select-label{max-width:100%}.tale-image-deck .intro-select-label select{max-width:220px}}
+/* Keep the slide and its real controls visible together in 16:9 deck mode. */
+body.neiroskazka-image-deck-only .tale-image-slide{height:calc(100vh - 88px);aspect-ratio:auto;min-height:0;max-height:calc(100vh - 88px)}
+body.neiroskazka-image-deck-only .tale-image-slide img{object-fit:contain}
+@media(max-width:760px){body.neiroskazka-image-deck-only .tale-image-slide{height:auto;aspect-ratio:16/9;max-height:none}}
+body.neiroskazka-image-deck-only .tale-image-slide{height:calc(100vh - 104px);max-height:calc(100vh - 104px)}

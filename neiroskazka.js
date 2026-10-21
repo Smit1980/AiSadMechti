@@ -4,7 +4,7 @@
  const q=s=>document.querySelector(s),all=s=>[...document.querySelectorAll(s)];
  const params=new URLSearchParams(location.search);
  if(params.get('deck')==='1')document.body.classList.add('neurosad-deck-only');
- if(/^#slide-(1[0-2]|[1-9])$/.test(location.hash))location.replace(location.pathname+location.search+'#intro-'+location.hash.slice(7));
+ if(/^#slide-(1[0-6]|[1-9])$/.test(location.hash))location.replace(location.pathname+'?deck=slides&slide='+location.hash.slice(7));
  const choices=all('[data-cold-choice]');
  choices.forEach((button,index)=>button.addEventListener('click',()=>{
   choices.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
