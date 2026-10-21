@@ -46,3 +46,7 @@ body.neiroskazka-image-deck-only .tale-image-slide{height:calc(100vh - 88px);asp
 body.neiroskazka-image-deck-only .tale-image-slide img{object-fit:contain}
 @media(max-width:760px){body.neiroskazka-image-deck-only .tale-image-slide{height:auto;aspect-ratio:16/9;max-height:none}}
 body.neiroskazka-image-deck-only .tale-image-slide{height:calc(100vh - 104px);max-height:calc(100vh - 104px)}
+
+body.neiroskazka-image-deck-only .tale-image-slide{display:flex;align-items:center;justify-content:center}
+body.neiroskazka-image-deck-only .tale-image-slide figure{display:flex;align-items:center;justify-content:center}
+body.neiroskazka-image-deck-only .tale-image-slide img{width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain}
